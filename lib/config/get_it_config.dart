@@ -9,19 +9,19 @@ setup() async {
 }
 
 
-init() async{
-  core.registerSingleton<SharedPreferences>(await SharedPreferences.getInstance());
-}
-
-GetIt sl = GetIt.instance;
-
-Future<void> configureDependencies() async {
-  sl.registerSingleton<SharedPreferences>(await SharedPreferences.getInstance());
-}
-
-
-Future<void> clearSharedPreferences() async {
-  final prefs = await SharedPreferences.getInstance();
-  await prefs.clear();
-}
-
+// init() async{
+//   core.registerSingleton<SharedPreferences>(await SharedPreferences.getInstance());
+// }
+//
+// GetIt sl = GetIt.instance;
+//
+// Future<void> configureDependencies() async {
+//   sl.registerSingleton<SharedPreferences>(await SharedPreferences.getInstance());
+// }
+//
+//
+// Future<void> clearSharedPreferences() async {
+//   final prefs = await SharedPreferences.getInstance();
+//   await prefs.clear();
+// }
+//
